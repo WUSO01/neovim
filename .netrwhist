@@ -1,0 +1,12 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhistcnt =2
+let g:netrw_dirhist_2='/Users/wusong/Code/project/infinity-server-v2'
+let g:netrw_dirhist_1='/Users/wusong/Code/project/infinity-chrome-extension'
+let g:netrw_dirhist_0='/Users/wusong/.config/nvim/plugin'
+let g:netrw_dirhist_9='/Users/wusong/.config/nvim'
+let g:netrw_dirhist_8='/Users/wusong/Code/project/infinity-chrome-extension'
+let g:netrw_dirhist_7='/Users/wusong/.config/nvim/plugin'
+let g:netrw_dirhist_6='/Users/wusong/.config/nvim'
+let g:netrw_dirhist_5='/Users/wusong/Code/project/infinity-chrome-extension/script'
+let g:netrw_dirhist_4='/Users/wusong/Code/project/infinity-chrome-extension'
+let g:netrw_dirhist_3='/Users/wusong/Code/project/infinity-chrome-extension/script'
