@@ -1,6 +1,6 @@
 # NeoVim
 
-我是一个前端，所以这个配置文件更适合前端的小伙伴。我日常技术栈：`typescript`, `javascript`, `scss`。
+我是一个前端，所以这个配置文件更适合前端的小伙伴。我日常技术栈：`typescript`, `javascript`, `scss`。
 
 💡：*搭配`iTerm2`、`tmux`食用更香*
 
