@@ -62,16 +62,13 @@ Plug 'HerringtonDarkholme/yats.vim' "TypeScript Syntax Highlighting
 Plug 'maxmellon/vim-jsx-pretty'     " JS and JSX syntax
 Plug 'jparise/vim-graphql'          " GraphQL syntax
 
-" git ---------
+" GIT ---------
 Plug 'airblade/vim-gitgutter'     " Show git diff of lines edited
 Plug 'tpope/vim-fugitive'         " :Gblame
 
 " 侧边栏
 Plug 'Shougo/defx.nvim', { 'do': ':UpdateRemotePlugins' }
 Plug 'kristijanhusak/defx-git'
-
-" GIT
-Plug 'tpope/vim-fugitive'
 
 " 实用集合
 Plug 'tpope/vim-surround'
