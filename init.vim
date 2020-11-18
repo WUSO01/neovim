@@ -145,6 +145,7 @@ autocmd BufEnter * call SyncTree()
 
 nmap <silent> bp <Plug>(wintabs_previous)
 nmap <silent> bn <Plug>(wintabs_next)
+:map <leader>ls :Buffers<cr>
 
 " -----------------------------------
 
