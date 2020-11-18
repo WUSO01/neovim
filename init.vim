@@ -74,8 +74,10 @@ Plug 'ryanoasis/vim-devicons'
 " 实用集合
 Plug 'tpope/vim-surround'
 Plug 'hecal3/vim-leader-guide'
-Plug  'bagrat/vim-buffet'           " buffer
 Plug 'scrooloose/nerdcommenter'     " 快速注释
+Plug 'zefei/vim-wintabs'
+Plug 'zefei/vim-wintabs-powerline'
+Plug 'christoomey/vim-tmux-navigator'
 
 " 文件搜索
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
@@ -114,9 +116,8 @@ let g:NERDTreeIndicatorMapCustom = {
     \ }
 
 " autocmd vimenter * NERDTree
-autocmd StdinReadPre * let s:std_in=1
-autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
-autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
+" autocmd StdinReadPre * let s:std_in=1
+" autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
 
 let g:NERDTreeIgnore = ['^node_modules$']
 
@@ -137,6 +138,13 @@ endfunction
 
 " Highlight currently open buffer in NERDTree
 autocmd BufEnter * call SyncTree()
+
+" -----------------------------------
+
+" ----------- Wintabs----------------
+
+nmap <silent> bp <Plug>(wintabs_previous)
+nmap <silent> bn <Plug>(wintabs_next)
 
 " -----------------------------------
 
@@ -196,6 +204,9 @@ endfunction
 " Remap for rename current word
 " TODO 自动打开quickfix list
 nmap <F2> <Plug>(coc-rename)
+
+" 重构
+nmap <F3> <Plug>(coc-refactor)
 
 " Formatting selected code.
 xmap <leader>f  <Plug>(coc-format-selected)
